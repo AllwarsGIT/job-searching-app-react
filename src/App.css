@@ -1,0 +1,50 @@
+.navbar {
+  border-bottom: 1px solid rgb(94, 94, 94);
+  background-color: #242424;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+}
+
+.simple-button {
+  background-color: transparent;
+  margin: 0 0.5rem;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, color 0.3s ease;}
+
+.simple-button:hover {
+  background-color: #61dafbfb;
+  color: #000;
+}
+
+.hero {
+  padding: 4rem;
+  border-bottom: 1px solid rgb(94, 94, 94);
+  background-color: #242424;
+  color: #fff; 
+  display: flex;
+  flex-direction: column;     
+  justify-content: center;    
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
