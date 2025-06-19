@@ -1,17 +1,9 @@
-import SimpleButton from "./SimpleButton";
 import { FaChevronDown } from "react-icons/fa";
-import { Dropdown } from "react-bootstrap";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function UserAvatarMenu() {
     return (
         <>
-        {/* <Dropdown >
-                <Dropdown.Toggle  bg="dark"  className='user-avatar-button' >
-                    <img style={{ marginRight: '12px', verticalAlign: 'middle'}} src="https://placehold.co/30" alt="User Avatar" width="30" height="30" className="rounded-circle" />
-                    <FaChevronDown/>
-                </Dropdown.Toggle>
-        </Dropdown> */}
         <NavDropdown
               id="nav-dropdown-dark-example"
               title={<span

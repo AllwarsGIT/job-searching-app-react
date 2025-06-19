@@ -12,6 +12,8 @@
   
 }
 
+
+
 .simple-button {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
@@ -52,10 +54,6 @@
   gap: 0.5rem;
 }
 
-.test {
-  background-color: #cfcfcf;
-}
-
 .user-avatar-button {
   display: inline-flex;
   align-items: center;
@@ -85,4 +83,31 @@
 
 .user-avatar-button .dropdown-toggle::after {
   display: none;
+}
+
+
+.home-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  width: 450px;
+  height: 200px;
+
+  background-color: #242424;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(94, 94, 94);
+}
+
+.home-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #242424;
 }
