@@ -1,11 +1,12 @@
 
 
-const SimpleButton = ({style, children = 'text'}) => {
+const SimpleButton = ({style, children = 'text', className}) => {
   return (
-    <button className="simple-button " style={style}>
+    <button className={`${className || ''}`} style={style}>
       {children}
     </button>
   );
 }
 
 export default SimpleButton;
+

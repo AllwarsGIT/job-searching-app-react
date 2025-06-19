@@ -28,7 +28,7 @@
 }
 
 .simple-button:hover {
-  background-color: #61dafbfb;
+  background-color: #79e2fffb;
   color: #000;
 }
 
@@ -41,7 +41,7 @@
   gap: 0.5rem;
 
   border-bottom: 1px solid rgb(94, 94, 94);
-  background-color: #242424;
+  background-color: #1e1e1e;
   color: #fff; 
   font-size: 1rem;
 }
@@ -52,7 +52,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
+  width: fit-content; 
+  margin: 0 auto; 
+  
 }
+
 
 .user-avatar-button {
   display: inline-flex;
@@ -60,6 +65,7 @@
   cursor: pointer;
 
   color: #fff;
+  
 }
 
 .user-avatar-button img {
@@ -74,11 +80,11 @@
 
 
 .user-avatar-button:hover {
-  color: #61dafbfb;
+  color: #79e2fffb;
 }
 
 .user-avatar-button:hover img {
-  border-color: #61dafbfb; 
+  border-color: #79e2fffb; 
 }
 
 .user-avatar-button .dropdown-toggle::after {
@@ -94,12 +100,12 @@
   padding: 2rem;
   gap: 1rem;
   width: 450px;
-  height: 200px;
+  min-height: 200px;
 
   background-color: #242424;
   color: #fff;
   border-radius: 10px;
-  border: 1px solid rgb(94, 94, 94);
+  
 }
 
 .home-cards-container {
@@ -109,5 +115,51 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+
   background-color: #242424;
+}
+@media (max-width: 1024px) {
+  .home-cards-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+.home-card-developer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.home-card-employer {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.button-home-card {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-developer {
+  background-color: #79e2fffb;
+  color: #000;
+}
+.button-developer:hover {
+
+}
+
+.button-employer {
+  background-color: #ffa537;
+  color: #000;
+}
+.button-employer:hover {
+
 }
