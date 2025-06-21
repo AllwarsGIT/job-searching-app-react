@@ -6,7 +6,7 @@ function Hero() {
       <h1>Welcome to Our Website</h1>
         <p>This website has been done from scratch using react.</p>
       <div className="button-container">
-        <SimpleButton className="simple-button" style={{ border: '1px solid rgb(94, 94, 94)' }}>Get Started</SimpleButton>
+        <SimpleButton className="simple-button button-start" >Get Started</SimpleButton>
         
         
       </div>

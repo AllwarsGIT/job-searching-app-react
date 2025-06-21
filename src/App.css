@@ -41,7 +41,7 @@
   gap: 0.5rem;
 
   border-bottom: 1px solid rgb(94, 94, 94);
-  background-color: #1e1e1e;
+  background-color: #1b1b1b;
   color: #fff; 
   font-size: 1rem;
 }
@@ -126,12 +126,12 @@
 }
 
 .home-card-developer {
-  background-color: #1e1e1e;
+  background-color: #1b1b1b;
   color: #fff;
 }
 
 .home-card-employer {
-  background-color: #1e1e1e;
+  background-color: #1b1b1b;
   color: #fff;
 }
 
@@ -150,16 +150,26 @@
 
 .button-developer {
   background-color: #79e2fffb;
-  color: #000;
+  color: #000000;
+  font-weight: 600;
+
 }
 .button-developer:hover {
+  background-color: #48aac5fb;
 
 }
 
 .button-employer {
   background-color: #ffa537;
-  color: #000;
+  color: #000000;
+  font-weight: 600;
 }
 .button-employer:hover {
+  background-color: #c4781c;
 
+}
+
+.button-start {
+  border: 1px solid rgb(94, 94, 94);
+  font-weight: 600;
 }

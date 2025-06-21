@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import SimpleButton from './Components/SimpleButton';
 import HomeCardContainer from './Components/HomeCardContainer';
+import JobCardList from './Components/JobCardList';
 
 function App() {  
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <HomeCardContainer />
+      <JobCardList />
 
     </>
   )
