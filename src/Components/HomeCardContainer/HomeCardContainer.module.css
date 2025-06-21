@@ -1,0 +1,56 @@
+.homeCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+
+  background-color: #242424;
+}
+@media (max-width: 1024px) {
+  .homeCardsContainer {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+.buttonHomeCard {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.buttonDeveloper {
+  background-color: #79e2fffb;
+  color: #000000;
+  font-weight: 600;
+
+}
+.buttonDeveloper:hover {
+  background-color: #48aac5fb;
+
+}
+
+.homeCardEmployer {
+  color: #fff;
+}
+
+.buttonEmployer {
+  background-color: #ffa537;
+  color: #000000;
+  font-weight: 600;
+}
+.buttonEmployer:hover {
+  background-color: #c4781c;
+
+}

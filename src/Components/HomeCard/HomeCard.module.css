@@ -1,0 +1,16 @@
+
+.homeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+  width: 450px;
+  min-height: 200px;
+
+  background-color: #1b1b1b;
+  color: #fff;
+  border-radius: 10px;
+  
+}

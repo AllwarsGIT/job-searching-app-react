@@ -1,10 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import SimpleButton from './Components/SimpleButton';
-import HomeCardContainer from './Components/HomeCardContainer';
-import JobCardList from './Components/JobCardList';
+import Navbar from './Components/Navbar/Navbar.jsx';
+import Hero from './Components/Hero/Hero';
+import HomeCardContainer from './Components/HomeCardContainer/HomeCardContainer.jsx';
+import JobCardList from './Components/JobCardList/JobCardList';
 
 function App() {  
   return (

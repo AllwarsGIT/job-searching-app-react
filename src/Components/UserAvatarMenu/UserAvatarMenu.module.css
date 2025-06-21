@@ -1,0 +1,36 @@
+
+
+
+.userAvatarButton {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  color: #fff;
+  
+}
+
+.userAvatarButton img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+
+.userAvatarButton:hover {
+  color: #79e2fffb;
+}
+
+.userAvatarButton:hover img {
+  border-color: #79e2fffb; 
+}
+
+.userAvatarButton .dropdown-toggle::after {
+  display: none;
+}
+
+

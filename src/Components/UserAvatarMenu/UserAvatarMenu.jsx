@@ -1,5 +1,6 @@
 import { FaChevronDown } from "react-icons/fa";
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import styles from './UserAvatarMenu.module.css';
 
 function UserAvatarMenu() {
     return (
@@ -7,7 +8,7 @@ function UserAvatarMenu() {
         <NavDropdown
               id="nav-dropdown-dark-example"
               title={<span
-                 className="user-avatar-button dropdown-toggle" 
+                className={`${styles.userAvatarButton} dropdown-toggle`}
                 style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
           <img
             src="https://placehold.co/30"
@@ -19,7 +20,7 @@ function UserAvatarMenu() {
           <FaChevronDown style={{ marginLeft: '8px' }} />
         </span>
               }
-              className="user-avatar-button"
+              className= {styles.userAvatarButton}
               menuVariant="dark"
             >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

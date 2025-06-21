@@ -1,5 +1,5 @@
-import JobCard from './JobCard';
-import jobList from '../jobs.json';
+import JobCard from '../JobCard/JobCard';
+import jobList from '../../jobs.json';
 
 function JobCardList() {
 
