@@ -1,18 +1,23 @@
 import JobCard from '../JobCard/JobCard';
 import jobList from '../../jobs.json';
+import styles from './JobCardList.module.css';
 
 function JobCardList() {
 
-    var list = jobList.map((job, index) => 
+    var cardList = jobList.slice(0, 3).map((job) => 
     <JobCard 
-        key={index} 
+        key={job.id} 
         {...job}
          />);
 
     return (
-        <div>
-            {list}
+        <div className={styles.container}>
+            <h1 className={styles.jobCardTitle}>Job Listings</h1>
+            <div className={styles.jobCardContainer}>
+                {cardList}
+            </div>
         </div>
+        
     );
 }
 

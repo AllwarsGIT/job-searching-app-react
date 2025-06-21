@@ -3,3 +3,12 @@
 .dropdown-toggle::after {
   display: none;
 }
+
+body {
+  background-color: #242424;
+;
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}

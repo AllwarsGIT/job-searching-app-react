@@ -1,0 +1,66 @@
+.jobCard {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 450px;
+    height: 400px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #1b1b1b;
+    color: #f0f0f0;
+    border : 1px solid rgb(94, 94, 94);
+}
+
+.jobType {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(136, 136, 136);
+}
+
+.jobTitle {
+    margin-bottom: 15px;
+
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.jobDescription {
+    margin-top: 20px;
+
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.jobSalary {
+    justify-self: flex-end;
+    margin-top: auto;
+
+    font-size: 1rem;
+    color: #6d9cff;
+}
+
+.jobLocation {
+
+    font-size: 1rem;
+    color: #ffb867;
+    border-top: 1px solid rgb(94, 94, 94);
+    padding-top: 8px;
+}
+
+.applyButton {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #00d696  ;
+    color: #000000;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.applyButton:hover {
+    background-color: #00b28c;
+}
