@@ -12,6 +12,14 @@
     border : 1px solid rgb(94, 94, 94);
 }
 
+@media (max-width: 600px) {
+    .jobCard {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 .jobType {
     font-size: 1rem;
     font-weight: bold;

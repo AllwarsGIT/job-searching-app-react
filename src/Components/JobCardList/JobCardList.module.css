@@ -1,5 +1,7 @@
 .jobCardContainer {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
@@ -7,9 +9,16 @@
     background-color: #1b1b1b;
 }
 
+@media (max-width: 1024px) {
+  .jobCardContainer {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
 .jobCardTitle {
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     font-size: 2rem;
     font-weight: bold;
@@ -21,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding-bottom: 2rem;
 
     background-color: #1b1b1b;
     border-top: 1px solid rgb(94, 94, 94);
