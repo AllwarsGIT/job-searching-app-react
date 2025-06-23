@@ -4,10 +4,9 @@
     gap: 1rem;
     padding: 1rem;
     max-width: 100%;
+    align-items: flex-start;
 
     background-color: #1b1b1b;
-    transition: 0.3s ease-in-out;
-    border: 2px solid rgb(252, 0, 0);
 }
 
 /* @media (max-width: 1024px) {

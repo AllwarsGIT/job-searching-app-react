@@ -1,15 +1,17 @@
 .jobCard {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     padding: 16px;
     max-width: 450px;
-    min-height: auto;
+    height: auto;
 
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #1b1b1b;
     color: #f0f0f0;
     border : 1px solid rgb(94, 94, 94);
+    
     
 }
 

@@ -13,9 +13,12 @@ function JobCardList() {
     return (
         <div className={styles.container}>
             <h1 className={styles.jobCardTitle}>Job Listings</h1>
-            <div className={styles.jobCardContainer}>
-                {cardList}
+            <div className={styles.marginContainer}>
+                <div className={styles.jobCardContainer}>
+                    {cardList}
+                </div>
             </div>
+
         </div>
         
     );
