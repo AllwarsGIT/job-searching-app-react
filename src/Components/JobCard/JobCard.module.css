@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
     padding: 16px;
-    width: 450px;
-    height: 400px;
+    max-width: 450px;
+    min-height: auto;
 
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #1b1b1b;
     color: #f0f0f0;
     border : 1px solid rgb(94, 94, 94);
+    
 }
 
 @media (max-width: 600px) {
@@ -71,4 +72,16 @@
 
 .applyButton:hover {
     background-color: #00b28c;
+}
+
+.readMoreButton {
+    padding: 0;
+    margin:0;
+    display: block;
+    text-align: left;
+
+    background-color: transparent;
+    color: #00d696;
+    border: none;
+    cursor: pointer;
 }
