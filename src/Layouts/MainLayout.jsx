@@ -5,9 +5,13 @@ import Footer from '../Components/Footer/Footer.jsx';
 function MainLayout(){
   return (
     <>
-        <Navbar />
-        <Outlet />
+      <Navbar />
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <div style={{ flex: 1 }}>
+          <Outlet />
+        </div>
         <Footer />
+      </div>
     </>
   );
 }

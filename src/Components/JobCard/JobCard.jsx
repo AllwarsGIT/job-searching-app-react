@@ -24,13 +24,13 @@ const JobCard = ({
   
   return (
     <div className={styles.jobCard}>
-      <p className={styles.jobType}><MdOutlineAccessTime /> {type}</p>
+      <p className={styles.jobType}>{type}</p>
       <h2 className={styles.jobTitle}>{title}</h2>
       <p className={styles.jobDescription}>{displayText}</p>
       <button className={styles.readMoreButton} onClick={toggleReadMore}>{isExpanded ? "Read Less" : "Read More"}</button>
-      <p className={styles.jobSalary}><FaMoneyBill /> {salary}/Year</p>
-      <p className={styles.jobLocation}><FaLocationDot /> {location}</p>
-      <Link to="" className={styles.applyButton}>Apply now</Link> 
+      <p className={styles.jobSalary}> {salary}/Year</p>
+      <p className={styles.jobLocation}> {location}</p>
+      <Link to="/" className={styles.applyButton}>Apply now</Link> 
     </div>
   );
 }
