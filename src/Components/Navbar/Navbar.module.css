@@ -58,3 +58,8 @@
 .rotateSlow:hover {
   animation: rotate 0.7s ease-in-out infinite;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

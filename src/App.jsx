@@ -1,22 +1,28 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Navbar from './Components/Navbar/Navbar.jsx';
-import Hero from './Components/Hero/Hero';
-import HomeCardContainer from './Components/HomeCardContainer/HomeCardContainer.jsx';
-import JobCardList from './Components/JobCardList/JobCardList';
-import ShowJobsButton from './Components/ShowJobsButton/ShowJobsButton.jsx';
-import Footer from './Components/Footer/Footer.jsx';
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom'
+import MainLayout from './Layouts/MainLayout.jsx';
+import HomePage from './Pages/HomePage.jsx';
+import JobsPage from './Pages/JobsPage.jsx';
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element ={<MainLayout />}>
+      <Route index element={<HomePage />} />
+      <Route path="/jobs" element={<JobsPage />} />
+    </Route>
+  )
+);
 
 function App() {  
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <HomeCardContainer />
-      <JobCardList />
-      <ShowJobsButton />
-      <Footer />
-    </>
+      <RouterProvider router={router} />
   )
 }
 

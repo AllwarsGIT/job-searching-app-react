@@ -1,4 +1,5 @@
-import SimpleButton from "../SimpleButton/SimpleButton.jsx";
+
+import {NavLink} from 'react-router-dom';
 import UserAvatarMenu from "../UserAvatarMenu/UserAvatarMenu.jsx";
 import logo from '../../assets/react.svg';
 import styles from './Navbar.module.css';
@@ -14,9 +15,9 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav  ">
-                        <SimpleButton className={styles.navButton}>Home</SimpleButton>
-                        <SimpleButton className={styles.navButton}>Jobs</SimpleButton>
-                        <SimpleButton className={styles.navButton}>Add Jobs</SimpleButton>
+                        <NavLink to="/" className={styles.navButton}>Home</NavLink>
+                        <NavLink to="/jobs" className={styles.navButton}>Jobs</NavLink>
+                        <NavLink className={styles.navButton}>Add Jobs</NavLink>
                     </ul>
                 </div>
                 <UserAvatarMenu />

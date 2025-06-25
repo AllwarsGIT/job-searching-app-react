@@ -1,4 +1,5 @@
 import styles from "./JobCard.module.css";
+import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaMoneyBill } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
@@ -29,7 +30,7 @@ const JobCard = ({
       <button className={styles.readMoreButton} onClick={toggleReadMore}>{isExpanded ? "Read Less" : "Read More"}</button>
       <p className={styles.jobSalary}><FaMoneyBill /> {salary}/Year</p>
       <p className={styles.jobLocation}><FaLocationDot /> {location}</p>
-      <SimpleButton className={styles.applyButton}>Apply now</SimpleButton> 
+      <Link to="" className={styles.applyButton}>Apply now</Link> 
     </div>
   );
 }
