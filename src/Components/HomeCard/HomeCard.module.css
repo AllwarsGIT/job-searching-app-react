@@ -16,3 +16,10 @@
   border: 1px solid rgb(94, 94, 94);
   
 }
+
+
+@media (max-width: 500px) {
+  .homeCard {
+    width: 100%; /* que ocupe todo el ancho en pantallas pequeñas */
+  }
+}
