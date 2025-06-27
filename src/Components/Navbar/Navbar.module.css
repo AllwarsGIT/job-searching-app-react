@@ -30,6 +30,11 @@
   color: #000;
 }
 
+.active {
+  background-color: #79e2fffb;
+  color: #000;
+}
+
 .rotateSlow {
   width: 40px;
   height: 40px;

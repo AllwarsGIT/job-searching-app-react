@@ -5,6 +5,9 @@ import logo from '../../assets/react.svg';
 import styles from './Navbar.module.css';
 
 const Navbar = () => {
+
+    const navClass = ({ isActive }) => isActive ? `${styles.navButton} ${styles.active}` : styles.navButton
+
     return (
         <nav className={`navbar navbar-expand-lg ${styles.customNavbar}`}>
             <div className="container">
@@ -15,16 +18,15 @@ const Navbar = () => {
                 </button>
                 <div className=" navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav  ">
-                        <NavLink to="/" className={styles.navButton}>Home</NavLink>
-                        <NavLink to="/jobs" className={styles.navButton}>Jobs</NavLink>
-                        <NavLink className={styles.navButton}>Add Jobs</NavLink>
+                        <NavLink to="/" className={navClass}>Home</NavLink>
+                        <NavLink to="/jobs" className={navClass}>Jobs</NavLink>
+                        <NavLink to="/addjobs" className={navClass}>Add Jobs</NavLink>  
+                          
                     </ul>
                 </div>
                 <UserAvatarMenu />
              </div>
         </nav>
-
-
     );
 }
 

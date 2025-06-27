@@ -10,7 +10,7 @@ function HomePage() {
     <>
         <Hero />
         <HomeCardContainer />
-        <JobCardList />
+        <JobCardList numCardsToShow={3} />
         <ShowJobsButton />
     </>
   );

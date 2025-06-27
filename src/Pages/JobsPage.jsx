@@ -1,9 +1,9 @@
-
+import JobCardList from '../Components/JobCardList/JobCardList.jsx';
 
 function JobsPage() {
   return (
     <>
-        <h1>Jobs Page</h1>
+        <JobCardList numCardsToShow={6} />
     </>
   );
 }
