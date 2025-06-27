@@ -43,7 +43,7 @@ const JobCard = ({
       <button className={styles.readMoreButton} onClick={toggleReadMore}>{isExpanded ? "Read Less" : "Read More"}</button>
       <p className={styles.jobSalary}> {salary}/Year</p>
       <p className={styles.jobLocation}> {location}</p>
-      <Link to="/" className={styles.applyButton}>Apply now</Link> 
+      <Link to="/" className={`${styles.applyButton} text-center`}>Apply now</Link> 
     </div>
   );
 }
