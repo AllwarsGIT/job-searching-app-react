@@ -9,6 +9,7 @@ The webpage is uploaded on vercel:
 
 ## Technologies
 
+- TypeScript
 - React  
 - modular CSS
 
