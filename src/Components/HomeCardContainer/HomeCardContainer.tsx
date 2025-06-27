@@ -1,4 +1,4 @@
-import HomeCard from '../HomeCard/HomeCard.jsx';
+import HomeCard from '../HomeCard/HomeCard';
 import styles from './HomeCardContainer.module.css';
 
 function HomeCardContainer() {

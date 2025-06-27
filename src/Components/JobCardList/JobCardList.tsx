@@ -1,10 +1,15 @@
 import JobCard from '../JobCard/JobCard';
+import { Job } from '../../Types/jobs';
 import jobList from '../../jobs.json';
 import styles from './JobCardList.module.css';
 
-function JobCardList({numCardsToShow}) {
+type JobCardListProps = {
+    numCardsToShow: number;
+}
+
+function JobCardList({numCardsToShow}: JobCardListProps) {
   
-    var cardList = jobList.slice(0, numCardsToShow).map((job) => 
+    var cardList = jobList.slice(0, numCardsToShow).map((job: Job) => 
     <JobCard 
         key={job.id} 
         {...job}

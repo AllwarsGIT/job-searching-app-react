@@ -3,8 +3,21 @@ import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaMoneyBill } from "react-icons/fa";
 import { MdOutlineAccessTime } from "react-icons/md";
-import SimpleButton from "../SimpleButton/SimpleButton.jsx";
-import useReadMore from "../../Hooks/useReadMore.jsx";
+import useReadMore from "../../Hooks/useReadMore";
+
+type JobCardProps = {
+  title?: string;
+  type?: string;
+  description?: string;
+  location?: string;
+  salary?: string;
+  // company?: {
+  //   name: string;
+  //   description: string;
+  //   contactEmail: string;
+  //   contactPhone: string;
+  // };
+};
 
 
 const JobCard = ({
@@ -18,7 +31,7 @@ const JobCard = ({
   //   description: "Company description",
   //   contactEmail: "Contact email",
   //   contactPhone: "Contact phone",
-  },
+  }: JobCardProps
 ) => {
   const {displayText, isExpanded, toggleReadMore}= useReadMore(description);
   

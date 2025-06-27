@@ -1,4 +1,3 @@
-import SimpleButton from '../SimpleButton/SimpleButton';
 import styles from './Hero.module.css';
 
 function Hero() {
@@ -7,7 +6,7 @@ function Hero() {
       <h1 className={styles.heroTitle}>Welcome to Our Website</h1>
         <p>This website has been done from scratch using react.</p>
       <div className={styles.buttonContainer}>
-        <SimpleButton className= {`${styles.heroButton}`}>Get Started</SimpleButton>
+        <button className= {`${styles.heroButton}`}>Get Started</button>
         
         
       </div>

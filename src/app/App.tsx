@@ -1,15 +1,16 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import '../App.css';
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider
 } from 'react-router-dom'
-import MainLayout from './Layouts/MainLayout.jsx';
-import HomePage from './Pages/HomePage.jsx';
-import JobsPage from './Pages/JobsPage.jsx';
-import NotFound from './Pages/NotFound.jsx';
+import MainLayout from '../Layouts/MainLayout';
+import HomePage from '../Pages/HomePage';
+import JobsPage from '../Pages/JobsPage';
+import NotFound from '../Pages/NotFound';
 
 
 const router = createBrowserRouter(

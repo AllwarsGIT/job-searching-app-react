@@ -1,9 +1,16 @@
-
-import SimpleButton from '../SimpleButton/SimpleButton.jsx';
 import styles from './HomeCard.module.css';
 import { Link } from 'react-router-dom';
 
-function HomeCard({ title, description, buttonText, linkClassName, className, to }) {
+type HomeCardProps = {
+  title: string;
+  description: string;
+  buttonText: string;
+  linkClassName?: string;
+  className?: string;
+  to: string;
+}
+
+function HomeCard({ title, description, buttonText, linkClassName, className, to }: HomeCardProps) {
   return (
     <div className={`${styles.homeCard} ${className}`}>
       <h2>{title}</h2>

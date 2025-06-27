@@ -1,12 +1,14 @@
-
 import {NavLink} from 'react-router-dom';
-import UserAvatarMenu from "../UserAvatarMenu/UserAvatarMenu.jsx";
 import logo from '../../assets/react.svg';
 import styles from './Navbar.module.css';
 
+type NavData = {
+    isActive: boolean;
+}
+
 const Navbar = () => {
 
-    const navClass = ({ isActive }) => isActive ? `${styles.navButton} ${styles.active}` : styles.navButton
+    const navClass = ({ isActive }:NavData) => isActive ? `${styles.navButton} ${styles.active}` : styles.navButton
 
     return (
         <nav className={`navbar navbar-expand-lg ${styles.customNavbar}`}>
@@ -24,7 +26,6 @@ const Navbar = () => {
                           
                     </ul>
                 </div>
-                <UserAvatarMenu />
              </div>
         </nav>
     );

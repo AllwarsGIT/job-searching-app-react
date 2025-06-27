@@ -1,6 +1,5 @@
 import styles from './ShowJobsButton.module.css';
 import { Link } from 'react-router-dom';
-import SimpleButton from '../SimpleButton/SimpleButton.jsx';
 
 function ShowJobsButton(){
   return (

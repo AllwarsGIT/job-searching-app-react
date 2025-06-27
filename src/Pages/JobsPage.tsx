@@ -1,4 +1,4 @@
-import JobCardList from '../Components/JobCardList/JobCardList.jsx';
+import JobCardList from '../Components/JobCardList/JobCardList.js';
 
 function JobsPage() {
   return (

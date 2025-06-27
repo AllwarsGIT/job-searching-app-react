@@ -1,7 +1,13 @@
 import { useState } from 'react';
 
-function useReadMore(text="", maxLenght = 100) {
-    const [isExpanded, setIsExpanded] = useState(false);
+type UseReadMoreReturn = {
+    displayText: string;
+    isExpanded: boolean;
+    toggleReadMore: () => void;
+}
+
+function useReadMore(text: string="", maxLenght: number = 100): UseReadMoreReturn {
+    const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
     const toggleReadMore = () => { //Function to toggle the read more state
         setIsExpanded((prev) => !prev);
