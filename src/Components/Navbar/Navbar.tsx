@@ -22,7 +22,7 @@ const Navbar = () => {
                     <ul className="navbar-nav  ">
                         <NavLink to="/" className={navClass}>Home</NavLink>
                         <NavLink to="/jobs" className={navClass}>Jobs</NavLink>
-                        <NavLink to="/addjobs" className={navClass}>Add Jobs</NavLink>  
+                        {/* <NavLink to="/addjobs" className={navClass}>Add Jobs</NavLink>   */}
                           
                     </ul>
                 </div>
