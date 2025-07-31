@@ -68,3 +68,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.navbarToggle {
+  display: none;
+  visibility: hidden;
+  color : #fff;
+  background-color: transparent;
+  border: none;
+}

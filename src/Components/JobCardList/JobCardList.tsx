@@ -9,7 +9,7 @@ type JobCardListProps = {
 
 function JobCardList({numCardsToShow}: JobCardListProps) {
   
-    var cardList = jobList.slice(0, numCardsToShow).map((job: Job) => 
+    var cardList = jobList.jobs.slice(0, numCardsToShow).map((job: Job) => 
     <JobCard 
         key={job.id} 
         {...job}
