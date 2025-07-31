@@ -3,6 +3,7 @@ import logo from '../../assets/react.svg';
 import styles from './Navbar.module.css';
 import { SlMenu } from "react-icons/sl";
 import { useState } from 'react';
+import { RxCross1 } from "react-icons/rx";
 
 type NavData = {
     isActive: boolean;
@@ -31,7 +32,7 @@ const Navbar = () => {
 
                 <SlMenu 
                     size={24} 
-                    className="navbarToggle md:hidden cursor-pointer"
+                    className="navbarToggle md:hidden cursor-pointer transition-all ease-in-out hover:text-[#79e2fffb]"
                     onClick={() => setIsOpen(!isOpen)}
                     />
 
@@ -43,11 +44,13 @@ const Navbar = () => {
                 )}
 
                 <div
-                    className={`fixed top-0 left-0 h-full w-64 bg-[#1f1f1f] shadow-md z-20 transform transition-transform duration-300 ease-in-out ${
-                    isOpen ? 'translate-x-0' : '-translate-x-full'
+                    className={`fixed top-0 right-0 h-full w-64 bg-[#1f1f1f] shadow-md z-20 transform transition-transform duration-300 ease-in-out ${
+                    isOpen ? 'translate-x-0' : 'translate-x-full'
                     } md:hidden`}
                 >
-                    
+                    <div className="p-4 border-b border-[#444] flex items-center justify-end">
+                        <RxCross1  size={24} onClick={() => setIsOpen(false)} className=" text-xl cursor-pointer transition-all ease-in-out hover:text-[#79e2fffb]"/>
+                    </div>
 
                     <nav className="flex flex-col py-2">
                         <NavLink to="/" className={navClass} onClick={() => setIsOpen(false)}>Home</NavLink>
